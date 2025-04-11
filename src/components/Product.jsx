@@ -178,11 +178,10 @@ const CategoryTabs = ({ activeTab, setActiveTab }) => {
             <button
               key={category.id}
               onClick={() => setActiveTab(category.id)}
-              className={`px-6 py-2 text-sm font-medium transition-all duration-300 ${
-                activeTab === category.id
+              className={`px-6 py-2 text-sm font-medium transition-all duration-300 ${activeTab === category.id
                   ? "bg-blue-600 text-white font-bold"
                   : "hover:text-white hover:bg-blue-500 text-gray-600"
-              }`}
+                }`}
             >
               {category.name}
             </button>
@@ -206,7 +205,7 @@ const Navbar = () => {
       {/* Navbar Section */}
       <nav
         className="bg-cover bg-center text-white h-auto"
-        style={{ backgroundImage: `url(${activeTab===1? abc4 : activeTab===2? cattelback : cremic2})` }}
+        style={{ backgroundImage: `url(${activeTab === 1 ? abc4 : activeTab === 2 ? cattelback : cremic2})` }}
       >
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center h-16">
@@ -227,7 +226,7 @@ const Navbar = () => {
                 Export
               </Link>
               <Link to="/Download" className="hover:text-blue-400">
-              Download
+                Download
               </Link>
             </div>
             <Link
@@ -260,7 +259,7 @@ const Navbar = () => {
                 Export
               </Link>
               <Link to="/Download" className="block hover:text-blue-600">
-              Download
+                Download
               </Link>
               <Link
                 to="/Contact"
@@ -310,13 +309,10 @@ const Navbar = () => {
               >
                 Read More →
               </span>
-
-
             </div>
           </div>
         ))}
       </div>
-
 
       {/* Contact & Map Section */}
       <div className="flex flex-col md:flex-row bg-white rounded-lg overflow-hidden p-8 gap-8 container mx-auto">
