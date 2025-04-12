@@ -90,15 +90,7 @@ const Footer = () => {
         <HiMail className="bg-white p-2 rounded-full text-blue-500 text-5xl cursor-pointer" />
       </a>
       <a
-        href="https://www.linkedin.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="LinkedIn"
-      >
-        <FaLinkedinIn className="bg-white p-2 rounded-full text-blue-500 text-5xl cursor-pointer" />
-      </a>
-      <a
-        href="https://wa.me/1234567890"
+        href="https://wa.me/8511727716"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp"

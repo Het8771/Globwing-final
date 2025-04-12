@@ -291,7 +291,7 @@ const AgricultureSection = () => {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex items-center">
-              <img src={logo} alt="Globwing logo" className="h-12 w-auto mr-2" />
+              <img src={logo} alt="Globwing logo" className="h-13 w-auto mr-2" />
             </div>
 
             {/* Desktop Menu */}

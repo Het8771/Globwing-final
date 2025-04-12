@@ -210,7 +210,7 @@ const Navbar = () => {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center h-16">
             <Link to="/">
-              <img src={logo} alt="Globwing logo" className="h-12 w-auto" />
+              <img src={logo} alt="Globwing logo" className="h-13 w-auto" />
             </Link>
             <div className="hidden md:flex items-center space-x-8 font-semibold">
               <Link to="/" className="hover:text-blue-400">
