@@ -33,7 +33,7 @@ import cer4 from "../image/cer4.webp";
 import cattelback from "../image/cattelback.jpeg";
 import abc4 from "../image/abc4.jpg";
 import cremic2 from "../image/cremic2.webp";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 // Dummy Category Data
 const categoryData = [
@@ -287,7 +287,7 @@ const Navbar = () => {
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
         {selectedCategory.products.map((product) => (
           <div key={product.id} className="bg-white shadow-md rounded-lg overflow-hidden">
-            <img src={product.image} alt={product.title} className="w-full h-48 object-cover" />
+            <LazyLoadImage src={product.image} alt={product.title} className="w-full h-48 object-cover" />
             <div className="p-4">
               <h3 className="text-lg font-semibold text-blue-600">{product.title}</h3>
               <p className="text-gray-700">{product.desc}</p>
@@ -328,7 +328,7 @@ const Navbar = () => {
           </form>
         </div>
         <div className="md:w-1/2 w-full">
-          <img src={map} alt="Company Location Map" className="w-full h-[300px] md:h-full object-cover rounded-lg" />
+          <LazyLoadImage src={map} alt="Company Location Map" className="w-full h-[300px] md:h-full object-cover rounded-lg" />
         </div>
       </div>
     </>

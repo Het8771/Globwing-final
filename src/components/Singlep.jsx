@@ -6,6 +6,7 @@ import map from "../image/map.svg";
 import { FaPaperPlane } from "react-icons/fa";
 import ProductDetailSection from "./Singleproduct";
 import Product from "../image/Product.svg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +23,7 @@ const Navbar = () => {
               {/* Logo */}
               <div>
                 <Link to="/">
-                  <img src={logo} alt="Globwing logo" className="h-13 w-auto" />
+                  <LazyLoadImage src={logo} alt="Globwing logo" className="h-13 w-auto" />
                 </Link>
               </div>
 
@@ -146,7 +147,7 @@ const Navbar = () => {
 
           {/* Map Section */}
           <div className="md:w-1/2 w-full">
-            <img src={map} alt="Company Location Map" className="w-full h-[300px] md:h-full object-cover rounded-lg" />
+            <LazyLoadImage src={map} alt="Company Location Map" className="w-full h-[300px] md:h-full object-cover rounded-lg" />
           </div>
         </div>
       </div>

@@ -57,6 +57,7 @@ import creamic5 from "../image/creamic5.jpeg";
 import cremic6 from "../image/cremic6.webp";
 import HOMEF1 from "../image/HOMEF1.svg";
 import HOMEF2 from "../image/HOMEF2.svg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 const AgricultureSection = () => {
@@ -291,7 +292,7 @@ const AgricultureSection = () => {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex items-center">
-              <img src={logo} alt="Globwing logo" className="h-13 w-auto mr-2" />
+              <LazyLoadImage src={logo} alt="Globwing logo" className="h-13 w-auto mr-2" />
             </div>
 
             {/* Desktop Menu */}
@@ -390,7 +391,7 @@ const AgricultureSection = () => {
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
               <div className="relative w-full h-screen">
-                <img src={slide.img} alt={slide.title} className="w-full h-full object-cover" />
+                <LazyLoadImage src={slide.img} alt={slide.title} className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-black/20" />
 
                 <div className="absolute inset-0 flex flex-col justify-center text-white px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
@@ -438,10 +439,10 @@ const AgricultureSection = () => {
           {/* Image Section */}
           <div className="relative">
             <div className="w-3/5 mx-auto">
-              <img src={HOMEF1} alt="Agriculture Products" className="rounded-full shadow-lg" />
+              <LazyLoadImage src={HOMEF1} alt="Agriculture Products" className="rounded-full shadow-lg" />
             </div>
             <div className="absolute top-1/3 right-15 w-1/3">
-              <img src={HOMEF2} alt="Crops and Seeds" className="rounded-full shadow-lg" />
+              <LazyLoadImage src={HOMEF2} alt="Crops and Seeds" className="rounded-full shadow-lg" />
             </div>
           </div>
 
@@ -484,7 +485,7 @@ const AgricultureSection = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
             {productImages.map((image, index) => (
               <div key={index} className="relative">
-                <img src={image} alt="Hulled Sesame seed" className="w-full h-60 object-cover rounded-md" />
+                <LazyLoadImage src={image} alt="Hulled Sesame seed" className="w-full h-60 object-cover rounded-md" />
                 <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-center py-2">
                   {/* <a href="#" className="text-white">Hulled Sesame seed</a> */}
                 </div>
@@ -517,7 +518,7 @@ const AgricultureSection = () => {
                   {Object.keys(categoriesData).map(category => (
                     <li key={category}>
                       <button
-                        className={`text-black py-2 px-4 rounded-md w-full text-left transition-colors duration-200 ${activeCategory === category
+                        className={`text-black py-2 px-4 rounded-md w-full text-left transition-colors cursor-pointer duration-200 ${activeCategory === category
                             ? "bg-[#3270DF] text-white"
                             : "hover:bg-[#3270DF] hover:text-white"
                           }`}
@@ -538,7 +539,7 @@ const AgricultureSection = () => {
                   key={index}
                   className="relative overflow-hidden rounded-md shadow-md group"
                 >
-                  <img
+                  <LazyLoadImage
                     src={image}
                     alt={`${activeCategory} product ${index + 1}`}
                     width={400}
@@ -567,7 +568,7 @@ const AgricultureSection = () => {
             {cardData.map((card, index) => (
               <div key={index} className="bg-white/30 rounded-md p-6 border-2 border-white">
                 <div className="flex justify-center h-24 items-center mb-4">
-                  <img src={card.image} alt={card.title} className="h-24 w-24 bg-[#026498] rounded-full" />
+                  <LazyLoadImage src={card.image} alt={card.title} className="h-24 w-24 bg-[#026498] rounded-full" />
                 </div>
                 <h3 className="text-xl font-semibold text-white">{card.title}</h3>
                 <p className="text-white">{card.description}</p>
@@ -592,7 +593,7 @@ const AgricultureSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
             {productImage.map((image, index) => (
               <div key={index} className="relative">
-                <img
+                <LazyLoadImage
                   src={image}
                   alt={`Product ${index + 1}`}
                   className="w-full h-64 object-cover rounded-md shadow-md"
@@ -660,7 +661,7 @@ const AgricultureSection = () => {
                   {renderStars(testimonial1.stars)}
                 </div>
                 <div className="flex flex-col items-center mt-4">
-                  <img
+                  <LazyLoadImage
                     src={user}
                     alt={testimonial1.name}
                     className="w-20 h-20 rounded-full object-cover mb-2"
@@ -727,7 +728,7 @@ const AgricultureSection = () => {
 
           {/* Map Section */}
           <div className="md:w-1/2 w-full">
-            <img src={map} alt="Company Location Map" className="w-full h-[300px] md:h-full object-cover rounded-lg" />
+            <LazyLoadImage src={map} alt="Company Location Map" className="w-full h-[300px] md:h-full object-cover rounded-lg" />
           </div>
         </div>
 

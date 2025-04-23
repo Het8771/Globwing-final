@@ -11,7 +11,6 @@ import Singlep from "./components/Singlep";
 import Singleb from "./components/Singleb";
 import Download from "./components/Download";
 
-
 function App() {
   return (
     <>

@@ -11,6 +11,7 @@ import {
   FaChevronRight,
   FaPaperPlane,
 } from "react-icons/fa";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -209,7 +210,7 @@ const Navbar = () => {
 
         {/* Map Section */}
         <div className="md:w-1/2 w-full">
-          <img
+          <LazyLoadImage
             src={map}
             alt="Company Location Map"
             className="w-full h-[300px] md:h-full object-cover rounded-lg"
