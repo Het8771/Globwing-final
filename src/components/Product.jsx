@@ -210,15 +210,16 @@ const CategoryTabs = ({ activeTab, setActiveTab }) => {
   return (
     <div className="container mx-auto px-4">
       <div className="flex justify-center mt-5">
-        <div className="flex border border-gray-300 rounded-lg overflow-hidden shadow-md">
+        <div className="flex border border-gray-300 rounded-lg overflow-x-auto scrollbar-hidden shadow-md w-full sm:w-auto">
           {categoryData.map((category) => (
             <button
               key={category.id}
               onClick={() => setActiveTab(category.id)}
-              className={`px-6 py-2 text-sm font-medium transition-all duration-300 ${activeTab === category.id
-                ? "bg-blue-600 text-white font-bold"
-                : "hover:text-white hover:bg-blue-500 text-gray-600"
-                }`}
+              className={`flex-shrink-0 px-6 py-2 text-sm font-medium transition-all duration-300 ${
+                activeTab === category.id
+                  ? "bg-blue-600 text-white font-bold"
+                  : "hover:text-white hover:bg-blue-500 text-gray-600"
+              }`}
             >
               {category.name}
             </button>
