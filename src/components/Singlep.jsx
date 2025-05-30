@@ -28,17 +28,17 @@ const Navbar = () => {
               </div>
 
               {/* Desktop Menu */}
-              <div className="hidden md:flex items-center space-x-8 font-semibold">
-              <Link to="/" className="text-black hover:text-blue-600">
+              <div className="hidden md:flex items-center space-x-8 font-semibold ">
+              <Link to="/" className="text-white hover:text-blue-600">
                 Home
               </Link>
-              <Link to="/About" className="text-black hover:text-blue-600">
+              <Link to="/About" className="text-white hover:text-blue-600">
                 About us
               </Link>
-              <Link to="/Product" className="text-black hover:text-blue-600">
+              <Link to="/Product" className="text-white hover:text-blue-600">
                 Product
               </Link>
-              <Link to="/Export" className="text-black hover:text-blue-600">
+              <Link to="/Export" className="text-white hover:text-blue-600">
                 Export
               </Link>
               {/* <a href="/Blog" className="text-black hover:text-blue-600">

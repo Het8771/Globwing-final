@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../image/logo.svg";
-import Product from "../image/Product.svg";
 import map from "../image/map.svg";
 import Agri from "../image/Agri.jpg";
 import Cattel3 from "../image/Cattel3.jpg";
@@ -24,12 +23,15 @@ import Cattel9 from "../image/Cattel9.jpeg";
 import Cattel10 from "../image/Cattel10.jpeg";
 import Cattel11 from "../image/Cattel11.jpeg";
 import Cattel12 from "../image/Cattel12.jpeg";
-import creamic5 from "../image/creamic5.jpeg";
-import cremic6 from "../image/cremic6.webp";
-import creami1 from "../image/creami1.jpg";
-import cer2 from "../image/cer2.webp";
-import cer3 from "../image/cer3.jpeg";
-import cer4 from "../image/cer4.webp";
+import BandHeater from "../image/BandHeater.png";
+import ENDSealing from "../image/ENDSealing.png";
+import HighAlumina from "../image/HighAlumina.png";
+import MCBCeramic from "../image/MCBCeramic.png";
+import Mechanical from "../image/Mechanical.png";
+import IgnitionElectrod from "../image/IgnitionElectrod.png";
+import SteatiteConnector from "../image/SteatiteConnector.png";
+import TerminalBlock from "../image/TerminalBlock.png";
+import Thermostat from "../image/Thermostat.png";
 import cattelback from "../image/cattelback.jpeg";
 import abc4 from "../image/abc4.jpg";
 import cremic2 from "../image/cremic2.webp";
@@ -148,23 +150,58 @@ Neutral Detergent Fiber	44.68(%)`},
     image: Ceramic,
     products: [
       {
-        id: 1, image: creami1, title: "Micro Beads", desc: "High-purity micro beads ideal for precision applications in ceramic and electrical industries.", singleDesc: `
-         Jyaluzir (ATZ) Alumina Toughened Zirconia beads are manufactured from a composite ceramic material comprising of microfine alumina particles mixed in matrix of nano sized zirconium particles with 20-25% Al2O3 in the composition and 60-65% ZrO2, ATZ composite features high fracture toughness, bulk density, hardness, thermal shock and wear resistance.`},
+        id: 1, image: BandHeater, title: "Band Heater Ceramic", desc: "Durable ceramic band heaters designed for efficient and uniform heating in plastic processing equipment.",
+        singleDesc: `Ceramic Band Heaters are made with a stainless steel outer sheath and internal ceramic insulation, delivering uniform heat distribution and excellent thermal efficiency. With a working temperature of up to 650°C, they offer superior durability, thermal shock resistance, and energy savings compared to conventional heaters—ideal for injection molding, blow molding, and extrusion machinery.          `
+      },
       {
-        id: 2, image: cer2, title: "Industrial Ceramic Parts", desc: "Industrial ceramic parts are high-performance components used in demanding environments for their exceptional strength, heat resistance, and wear resistance.", singleDesc: `
-     Ceramic heater parts are essential components used in various heating devices due to their excellent thermal conductivity, fast heating capability, and high durability. These parts, such as ceramic heating elements, insulators, and plates, are designed to withstand high temperatures while providing consistent and energy-efficient heat. Commonly found in home appliances, industrial machines, and automotive systems, ceramic heater parts are favored for their safety, reliability, and long operational life.` },
+        id: 2, image: ENDSealing, title: "END Sealing Bead", desc: "Robust end sealing beads designed to provide airtight and durable seals in high-temperature ceramic and electrical applications.",
+singleDesc: `
+END Sealing Beads are engineered from high-purity ceramic materials to offer thermal insulation and sealing integrity in extreme environments. They are typically used at the junction of ceramic heaters, tubes, or elements to prevent heat loss and maintain operational stability. Resistant to thermal shock, corrosion, and mechanical stress, these beads ensure long-lasting performance in demanding industrial settings.
+`},
+
       {
-        id: 3, image: cer3, title: "Customised  creamic  parts", desc: "Customized ceramic parts are precision-engineered components designed to meet specific industrial needs with high heat resistance and durability.", singleDesc: `
-       Customized ceramic parts are specially engineered components tailored to meet specific design, performance, and application requirements across industries. These parts can be shaped, sized, and composed using advanced ceramic materials like alumina, zirconia, or steatite, offering exceptional heat resistance, electrical insulation, corrosion resistance, and mechanical strength. Common applications include customized insulators, seals, spacers, bushings, and heater components used in electronics, automotive, medical devices, and high-temperature machinery. The customization ensures precise fit, enhanced durability, and optimal performance in demanding environments.` },
+        id: 3, image: HighAlumina, title: "High Alumina Ceramic", desc: "High-purity alumina ceramics offering exceptional hardness, thermal stability, and wear resistance for industrial and electrical applications.",
+singleDesc: `
+High Alumina Ceramics, typically composed of 92–99.8% Al₂O₃, are known for their excellent mechanical strength, dielectric properties, and resistance to corrosion and high temperatures. Ideal for electrical insulators, wear-resistant linings, and precision components in industries such as electronics, metallurgy, and chemical processing.
+`
+      },
       {
-        id: 4, image: cer4, title: "Pumps part", desc: "Pump parts are precision-engineered components designed to ensure efficient fluid movement, durability, and reliability in various pumping systems.", singleDesc: `
-      Pump parts are essential components used in various types of pumps to ensure smooth and efficient fluid transfer across industrial, commercial, and domestic applications. These parts include impellers, casings, shafts, seals, and bearings, all designed to work together for optimal performance and minimal downtime. Made from high-quality materials like stainless steel, ceramics, or specialized alloys, pump parts are built to withstand high pressure, corrosion, and wear, making them ideal for use in challenging environments such as chemical processing, water treatment, and oil & gas industries.` },
+        id: 4, image: IgnitionElectrod, title: "Ignition Electrod", desc: "Precision ignition electrodes designed for reliable spark generation in gas burners and combustion systems.",
+singleDesc: `
+Ignition Electrodes are crafted using high-purity ceramic insulation and nickel/chromium alloy conductors to ensure consistent spark performance in gas-fired heating systems. With excellent thermal shock resistance and electrical insulation, they are ideal for industrial furnaces, boilers, ovens, and burners requiring dependable ignition under extreme conditions.
+`
+      },
       {
-        id: 5, image: creamic5, title: "Transformer Bushings", desc: "Enhanced electrical safety.", singleDesc: `
-        Transformer bushings are critical components in electrical transformers, serving as insulators for conductors that pass through the transformer tank. They provide electrical insulation, mechanical support, and protection against environmental factors like moisture and contaminants. Bushings ensure the safe and reliable operation of transformers by preventing electrical breakdowns and short circuits between high-voltage and low-voltage windings or the grounded tank.` },
+        id: 5, image: MCBCeramic, title: "MCB Ceramic plat", desc: "High-strength ceramic plates used in MCBs for electrical insulation and arc resistance under high-temperature conditions.",
+singleDesc: `
+MCB Ceramic Plates are manufactured from high-purity alumina to provide superior thermal insulation, dielectric strength, and resistance to arc and heat in miniature circuit breakers. These plates ensure long-term reliability and safety in electrical distribution systems by withstanding high interrupting currents and mechanical stress.
+`
+      },
       {
-        id: 6, image: cremic6, title: "Thermal Shock Resistant Parts", desc: "Ensuring long-lasting performance.", singleDesc: `
-        Thermal shock resistant parts are designed to withstand rapid and extreme temperature changes without suffering damage. These components are crucial in various industries, including aerospace, automotive, electronics, and manufacturing, where they are exposed to fluctuating thermal conditions. Materials used for these parts include advanced ceramics like silicon carbide (SiC), silicon nitride (Si3N4), alumina (Al2O3), and zirconia (ZrO2), as well as specialized polymers and composites.` },
+        id: 6, image: Mechanical, title: "Mechanical Seal Ring",desc: "Precision-engineered ceramic seal rings designed to prevent leakage and withstand extreme mechanical and thermal stress in rotating equipment.",
+singleDesc: `
+Mechanical Seal Rings are made from advanced ceramic materials like alumina or silicon carbide to ensure excellent wear resistance, thermal stability, and chemical inertness. Used in pumps, compressors, and mixers, these rings maintain a tight seal under high pressure and temperature, enhancing the durability and efficiency of sealing systems.
+`
+      },
+      {
+        id: 7, image: SteatiteConnector, title: "Steatite Connector", desc: "High-performance steatite ceramic connectors offering excellent electrical insulation and thermal resistance for high-temperature applications.",
+singleDesc: `
+Steatite Connectors are manufactured from magnesium silicate-based ceramic, providing high dielectric strength, low electrical loss, and thermal durability. Commonly used in heaters, lighting systems, and electrical terminals, these connectors ensure stable performance in high-voltage and high-temperature environments.
+`
+      },
+      {
+        id: 8, image: TerminalBlock, title: "Terminal Block", desc: "Durable terminal blocks designed for secure electrical connections, offering excellent heat resistance and insulation in high-temperature circuits.",
+singleDesc: `
+Ceramic Terminal Blocks are made from high-purity steatite or alumina ceramic, providing superior thermal stability, dielectric strength, and resistance to electrical arcing. Ideal for heating elements, industrial ovens, and high-load circuits, they ensure reliable wire terminations in demanding electrical environments.
+`
+      },
+
+      {
+        id: 9, image: Thermostat, title: "Thermostat Parts",desc: "Precision-engineered ceramic thermostat parts ensuring accurate temperature control and high thermal durability in heating and cooling systems.",
+singleDesc: `
+Thermostat Parts are made from high-temperature resistant ceramic materials to provide excellent insulation, mechanical stability, and long-term performance. These components are essential for precise thermal regulation in appliances such as water heaters, ovens, HVAC systems, and industrial temperature controllers.
+`
+      },
     ],
   },
 ];
@@ -179,8 +216,8 @@ const CategoryTabs = ({ activeTab, setActiveTab }) => {
               key={category.id}
               onClick={() => setActiveTab(category.id)}
               className={`px-6 py-2 text-sm font-medium transition-all duration-300 ${activeTab === category.id
-                  ? "bg-blue-600 text-white font-bold"
-                  : "hover:text-white hover:bg-blue-500 text-gray-600"
+                ? "bg-blue-600 text-white font-bold"
+                : "hover:text-white hover:bg-blue-500 text-gray-600"
                 }`}
             >
               {category.name}
