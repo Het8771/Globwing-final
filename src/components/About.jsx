@@ -166,11 +166,15 @@ const Navbar = () => {
       </section>
 
       {/* Contact Form & Map Section */}
-      <div className="flex flex-col md:flex-row bg-white rounded-lg shadow-md overflow-hidden p-8 gap-8 container mx-auto my-12">
+     <div className="flex flex-col md:flex-row bg-white rounded-lg shadow-md overflow-hidden p-4 md:p-8 gap-8 container mx-auto my-12">
         {/* Form Section */}
         <div className="md:w-1/2 w-full">
-          <h2 className="text-2xl font-semibold text-[#3270DF] mb-4">Have Questions?</h2>
-          <h1 className="text-3xl font-bold text-[#3270DF] mb-6">We're Here to Help!</h1>
+          <h2 className="text-2xl font-semibold text-[#3270DF] mb-2">
+            Have Questions?
+          </h2>
+          <h1 className="text-3xl font-bold text-[#3270DF] mb-4">
+            We're Here to Help!
+          </h1>
 
           <form className="space-y-4">
             {["Your Name", "Your Email", "Phone"].map((placeholder, index) => (
@@ -210,11 +214,16 @@ const Navbar = () => {
 
         {/* Map Section */}
         <div className="md:w-1/2 w-full">
-          <LazyLoadImage
-            src={map}
-            alt="Company Location Map"
-            className="w-full h-[300px] md:h-full object-cover rounded-lg"
-          />
+          <div className="w-full h-64 md:h-full">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.821663228372!2d72.8775692758764!3d21.238919280526044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f705dffe915%3A0x1fc83e2ebcf890f5!2sTulsi%20Arcade!5e0!3m2!1sen!2sin!4v1748606234142!5m2!1sen!2sin"
+              className="w-full h-full rounded"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </div>
 
