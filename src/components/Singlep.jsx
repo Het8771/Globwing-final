@@ -7,6 +7,8 @@ import { FaPaperPlane } from "react-icons/fa";
 import ProductDetailSection from "./Singleproduct";
 import Product from "../image/Product.svg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import Form from "../components/Form";
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,22 +31,22 @@ const Navbar = () => {
 
               {/* Desktop Menu */}
               <div className="hidden md:flex items-center space-x-8 font-semibold ">
-              <Link to="/" className="text-white hover:text-blue-600">
-                Home
-              </Link>
-              <Link to="/About" className="text-white hover:text-blue-600">
-                About us
-              </Link>
-              <Link to="/Product" className="text-white hover:text-blue-600">
-                Product
-              </Link>
-              <Link to="/Export" className="text-white hover:text-blue-600">
-                Export
-              </Link>
-              {/* <a href="/Blog" className="text-black hover:text-blue-600">
+                <Link to="/" className="text-white hover:text-blue-600">
+                  Home
+                </Link>
+                <Link to="/About" className="text-white hover:text-blue-600">
+                  About us
+                </Link>
+                <Link to="/Product" className="text-white hover:text-blue-600">
+                  Product
+                </Link>
+                <Link to="/Export" className="text-white hover:text-blue-600">
+                  Export
+                </Link>
+                {/* <a href="/Blog" className="text-black hover:text-blue-600">
                 Blog
               </a> */}
-            </div>
+              </div>
 
               {/* Contact Button */}
               <Link
@@ -69,30 +71,30 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Menu */}
-                    {isMenuOpen && (
-                      <div className="md:hidden bg-white shadow-lg rounded-lg mt-2 p-4 space-y-4 text-gray-800">
-                        <Link to="/" className="block hover:text-blue-600">
-                          Home
-                        </Link>
-                        <Link to="/About" className="block hover:text-blue-600">
-                          About us
-                        </Link>
-                        <Link to="/Product" className="block hover:text-blue-600">
-                          Product
-                        </Link>
-                        <Link to="/Export" className="block hover:text-blue-600">
-                          Export
-                        </Link>
-                        {/* <Link to="/Blog" className="block hover:text-blue-600">
+            {isMenuOpen && (
+              <div className="md:hidden bg-white shadow-lg rounded-lg mt-2 p-4 space-y-4 text-gray-800">
+                <Link to="/" className="block hover:text-blue-600">
+                  Home
+                </Link>
+                <Link to="/About" className="block hover:text-blue-600">
+                  About us
+                </Link>
+                <Link to="/Product" className="block hover:text-blue-600">
+                  Product
+                </Link>
+                <Link to="/Export" className="block hover:text-blue-600">
+                  Export
+                </Link>
+                {/* <Link to="/Blog" className="block hover:text-blue-600">
                           Blog
                         </Link> */}
-                        <Link
-                          to="/Contact"
-                          className="block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-center"
-                        >
-                          Contact us
-                        </Link>
-                      </div>
+                <Link
+                  to="/Contact"
+                  className="block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-center"
+                >
+                  Contact us
+                </Link>
+              </div>
             )}
           </div>
 
@@ -115,40 +117,7 @@ const Navbar = () => {
 
         {/* Contact Form & Map Section */}
         <div className="flex flex-col md:flex-row bg-white rounded-lg overflow-hidden p-8 gap-8 container mx-auto">
-          {/* Form Section */}
-          <div className="md:w-1/2 w-full">
-            <h2 className="text-2xl font-semibold text-[#3270DF] mb-4">Have Questions?</h2>
-            <h1 className="text-3xl font-bold text-[#3270DF] mb-6">We're Here to Help!</h1>
-
-            <form className="space-y-4">
-              {["Your Name", "Your Email", "Phone"].map((placeholder, index) => (
-                <input key={index} type="text" placeholder={placeholder} className="w-full p-3 border rounded focus:ring focus:ring-blue-200" />
-              ))}
-
-              <select className="w-full p-3 border rounded focus:ring focus:ring-blue-200">
-                <option>Choose Subject</option>
-                <option>General Inquiry</option>
-                <option>Support</option>
-                <option>Sales</option>
-              </select>
-
-              <textarea placeholder="Message" rows="4" className="w-full p-3 border rounded focus:ring focus:ring-blue-200"></textarea>
-
-              <div className="flex items-center">
-                <input type="checkbox" id="robot" className="mr-2" />
-                <label htmlFor="robot" className="text-sm">I AM Not a Robot</label>
-              </div>
-
-              <button className="w-full bg-[#3270DF] text-white p-3 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400">
-                Send Message
-              </button>
-            </form>
-          </div>
-
-          {/* Map Section */}
-          <div className="md:w-1/2 w-full">
-            <LazyLoadImage src={map} alt="Company Location Map" className="w-full h-[300px] md:h-full object-cover rounded-lg" />
-          </div>
+          <Form />
         </div>
       </div>
 

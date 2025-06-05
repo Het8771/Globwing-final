@@ -24,7 +24,6 @@ function App() {
         <Route path="/Download" element={<Download/>} />
         <Route path="/Singlep" element={<Singlep/>} />
         <Route path="/Singleb" element={<Singleb/>} />
-           
         </Routes>
         <Footer/>
     </Router>
